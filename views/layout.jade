@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+	head
+		title= title
+		link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
+		link(rel='stylesheet', href='/bootstrap/css/bootstrap-responsive.min.css')
+		link(href='http://fonts.googleapis.com/css?family=Source+Sans+Pro', rel='stylesheet')
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		script(src='/bootstrap/js/bootstrap.min.js')
+		script(src='/javascripts/jquery-1.11.3.min.js')
+		script(src='/javascripts/plugins.js')
+		script(src='/javascripts/analytics.js')
+		script(src='/javascripts/jquery.panelSnap.js')
+		block extraHeaders
+
+	body
+		.navbar.navbar-default.navbar-static-top
+			.container-fluid
+				.navbar-header 
+					ul.nav#top-nav
+						li(data-menuanchor='home-anchor')
+							a(href='#Home').nav-fonts Home
+						li(data-menuanchor='aboutMe-anchor')
+							a(href='#AboutMe').nav-fonts About Me
+
+
+		block content
+
+	script(src='/javascripts/animateScroll.js')

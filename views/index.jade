@@ -1,0 +1,32 @@
+extends layout
+
+block extraHeaders
+	link(href='https://fonts.googleapis.com/css?family=Raleway|Lusitana' rel='stylesheet')
+
+block content
+	section#Home
+		.blur
+		span.container
+			.row-fluid
+				.span12.text-center(data-sr='wait 0.5s')
+					h1.page-header Ryan Waters
+
+			.row-fluid
+				.span12.text-center(data-sr='wait 1.5s')
+					h4 Full Stack Software Engineer
+
+			.row-fluid 
+				.span12.text-center(data-sr='wait 2.5s')
+					h3 Powered By NodeJs, Boostrap, Styl, and Jade
+
+	section#AboutMe
+		.container
+			.row-fluid
+				.span12.text-center.social-container
+					h3(data-sr='reset wait 0.5s vFactor 5') Let's build something together
+					.img-responsive(data-sr='reset wait 1.0s vFactor 3')
+						a(target='_blank' href='https://github.com/wateryan').social: img(src='images/github.png')
+						a(target='_blank' href='https://www.linkedin.com/in/rmwaters').social: img(src='images/linkedin.png')
+
+	script(src='/javascripts/scrollReveal.min.js')
+	script(src='/javascripts/instantiateSr.js')
